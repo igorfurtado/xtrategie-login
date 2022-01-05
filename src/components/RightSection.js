@@ -5,7 +5,7 @@ import Title from './Title';
 
 export default function RightSection() {
     return (
-        <Grid item md={6} elevation={6} square className='info-side' component="section">
+        <Grid item md={6} elevation={6} className='info-side' component="section">
             <Title />
             <Form />
         </Grid>
