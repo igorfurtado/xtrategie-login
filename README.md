@@ -42,8 +42,12 @@ A proposta do projeto é tratar os dados de login recebidos pelo usuário e exib
 
 ## Screenshots
 
-![Xtrategie mobile](https://user-images.githubusercontent.com/70289587/148425919-98070545-5414-48bc-a177-2ab7c5bc8959.png)
-![Xtrategie desktop](https://user-images.githubusercontent.com/70289587/148425981-64f8aa85-3c82-4502-be88-61c91402165b.png)
+<p align="center">
+  <img style="width: 300px;" src="https://user-images.githubusercontent.com/70289587/148425919-98070545-5414-48bc-a177-2ab7c5bc8959.png" alt="Xtrategie mobile"/>
+</p>
+<p align="center">
+  <img style="width: 600px;" src="https://user-images.githubusercontent.com/70289587/148425981-64f8aa85-3c82-4502-be88-61c91402165b.png" alt="Xtrategie desktop"/>
+</p>
 
 
 
