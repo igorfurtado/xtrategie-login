@@ -1,35 +1,41 @@
 import React from 'react';
+import createSagaMiddleware from 'redux-saga';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 import Footer from './components/Footer';
 import Grid from '@material-ui/core/Grid';
 import './CSS/index.css';
 import BoxWrapper from './components/BoxWrapper';
 import myReducer from './reducers/myReducer';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import rootSaga from './sagas';
 
-const SAVED_ITEMS = "savedItems";
+// const SAVED_ITEMS = "savedItems";
 
-function persistState(state) {
-    localStorage.setItem(SAVED_ITEMS, JSON.stringify(state));
-};
+// function persistState(state) {
+//     localStorage.setItem(SAVED_ITEMS, JSON.stringify(state));
+// };
 
-function loadState() {
-    const actualState = localStorage.getItem(SAVED_ITEMS);
-    if (actualState) {
-        return JSON.parse(actualState);
-    }
-    else {
-        return [];
-    }
-};
+// function loadState() {
+//     const actualState = localStorage.getItem(SAVED_ITEMS);
+//     if (actualState) {
+//         return JSON.parse(actualState);
+//     }
+//     else {
+//         return [];
+//     }
+// };
 
-const store = createStore(myReducer, loadState());
+const sagaMiddleware = createSagaMiddleware();
+
+const store = createStore(myReducer, applyMiddleware(sagaMiddleware));
+
+sagaMiddleware.run(rootSaga);
 
 //Persistindo o estado
 
-store.subscribe(() => {
-    persistState(store.getState());
-});
+// store.subscribe(() => {
+//     persistState(store.getState());
+// });
 
 function App() {
 
