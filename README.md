@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+<p align="center">
+  <img style="width: 300px;" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png" alt="Xtrategie Logo"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Xtrategie Login
 
-## Available Scripts
+Desenvolvimento de uma tela de login com React e Redux/Saga.
 
-In the project directory, you can run:
+## Documentação de cores
 
-### `npm start`
+| Cor               | Hexadecimal                                                |
+| ----------------- | ---------------------------------------------------------------- |
+| Azul              | ![#A4BBDD](https://via.placeholder.com/10/A4BBDD?text=+) #A4BBDD |
+| Branco            | ![#FFFFFF](https://via.placeholder.com/10/ffffff?text=+) #FFFFFF |
+| Verde             | ![#3AC5B0](https://via.placeholder.com/10/3AC5B0?text=+) #3AC5B0 |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Documentação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esta aplicação tem o gerenciamento de estados feito por meio do Redux. Para possibilitar execução de requisições assíncronas, a biblioteca redux-saga foi instalada.
 
-### `npm run build`
+Os arquivos de lógica estão distribuídos dentro da pasta src. Nesta, existem pastas de componentes React, actions e reducers, além de um arquivo que contém os Redux/Saga e um arquivo de estilos CSS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Na pasta public estão os arquivos index.html, manifest.json e robots.txt.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Foi ainda criado na raiz do projeto um arquivo .editorconfig para padrozinar as configurações de editores de código.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O desenvolvimento do front-end foi baseado na biblioteca Material UI, que foi instalado como dependência neste projeto.
 
-### `npm run eject`
+A proposta do projeto é tratar os dados de login recebidos pelo usuário e exibi-los por meio de um console.log que deve ser emitido diretamente do arquivo sagas.js. Para que os dados sejam submetidos com sucesso, os campos de e-mail e login devem estar preenchidos. Caso contrário, uma mensagem de erro é exibida para o usuário.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Autores
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [@igorfurtado](https://github.com/igorfurtado)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Stack utilizada
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Front-end:** React, Redux/Saga
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
