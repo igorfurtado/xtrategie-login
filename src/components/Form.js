@@ -13,6 +13,8 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
 export default function Form() {
+
+    // Declarando variáveis e estados iniciais
     const initialPassword = {
         password: '',
         showPassword: false,
@@ -30,11 +32,13 @@ export default function Form() {
     const [passId, setPassId] = useState("filled-adornment-password");
     const [statusPass, setStatusPass] = useState(false);
 
+    // Capturando senha inserida pelo usuário
     const handleChange = (prop) => (event) => {
         setValues({ ...values, [prop]: event.target.value });
         cleanErrorsPassword();
     };
 
+    // Habilitando ou desabilitando a visibilidade dos caracteres de senha do usuário
     const handleClickShowPassword = () => {
         setValues({ ...values, showPassword: !values.showPassword });
     };
@@ -43,12 +47,14 @@ export default function Form() {
         event.preventDefault();
     };
 
+    // Capturando e-mail inserido pelo usuário
     function changeEmail(event) {
         let newEmail = event.target.value;
         setEmail(newEmail);
         cleanErrorsEmail();
     };
 
+    // Evento de clique no botão
     function addItemEvent(event) {
         event.preventDefault(); //Evita o comportamento default de um botão dentro de um form.
         if (email && values.password) {
@@ -84,6 +90,7 @@ export default function Form() {
         }
     };
 
+    // Limpando avisos de erros nos campos de input
     function cleanErrorsEmail() {
         setHelperText("");
         setTextId("filled-basic");
