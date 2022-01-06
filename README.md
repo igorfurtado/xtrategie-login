@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="width: 300px;" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png" alt="Xtrategie Logo"/>
+  <img style="width: 300px;" src="https://user-images.githubusercontent.com/70289587/148424518-813115fc-f708-48a7-a98e-90d9d1b587ca.png" alt="Xtrategie Logo"/>
 </p>
 
 # Xtrategie Login
