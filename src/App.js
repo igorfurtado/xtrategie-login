@@ -9,33 +9,11 @@ import BoxWrapper from './components/BoxWrapper';
 import myReducer from './reducers/myReducer';
 import rootSaga from './sagas';
 
-// const SAVED_ITEMS = "savedItems";
-
-// function persistState(state) {
-//     localStorage.setItem(SAVED_ITEMS, JSON.stringify(state));
-// };
-
-// function loadState() {
-//     const actualState = localStorage.getItem(SAVED_ITEMS);
-//     if (actualState) {
-//         return JSON.parse(actualState);
-//     }
-//     else {
-//         return [];
-//     }
-// };
-
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(myReducer, applyMiddleware(sagaMiddleware));
 
 sagaMiddleware.run(rootSaga);
-
-//Persistindo o estado
-
-// store.subscribe(() => {
-//     persistState(store.getState());
-// });
 
 function App() {
 
